@@ -1,0 +1,36 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background: var( --color-background);
+    -webkit-font-smoothing: antialiased;
+    font-size: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  }

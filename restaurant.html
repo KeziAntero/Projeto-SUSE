@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUSE | Restaurantes</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/restaurant.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+  
+</head>
+<body id="page-restaurant">
+  <div id="container">
+    <header class="page-header">
+      <div class="top-bar-container">
+        <a href="search-results.html">
+          <img src="images/icons/back.svg" alt="Voltar">
+        </a>
+        <img src="images/logo.png" alt="SUSE">
+      </div>
+      <div class="header-content">
+        <strong>Esses são os Restaurantes disponíveis</strong>
+        <button onclick="location.href='cadastro-restaurant.html'" type="button">+ Cadastrar seu restaurante</button>
+      </div>
+    </header>
+    <main>
+      <article class="restaurant-item">
+        <header>
+          <img src="images/festa.jpg"alt="banner">
+          <div>
+            <strong>Restaurante da esquina</strong>
+            <span><i class="fas fa-map-marker-alt"></i> Rua Blue Marinho</span>
+            <span><i class="fas fa-phone"></i> 9999999999 </span>
+            <span><i class="far fa-clock"></i> Das 17h30 até 22h00 </span>
+            </div>
+        </header>
+
+        <div class="holder">
+
+          <figure>
+            <img src="images/rest1.jpg" alt="">
+            <figcaption>Filé com fritas</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/rest2.jpg" alt="">
+            <figcaption>Filé com fritas</figcaption>
+          </figure>
+          
+          <figure>
+            <img src="images/rest3.jpg" alt="">
+            <figcaption>Filé com fritas</figcaption>
+          </figure>
+         
+        </div>
+       
+        <footer>
+         
+            <input type="radio" id="inputradio" class="curtir" name="name" value="value">
+            <label for="inputradio"> Curtir</label>
+        </footer>
+      </article>
+
+     
+     
+    </main>
+  </div>
+
+<script src="js/carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>SUSE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/search-results.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body>
+
+	<header class="header">
+    <div class="content">
+      <div class="logo fl-left">
+        <a href="#">
+          <img src="images/logo.png" alt="logo"/>
+        </a>
+      </div>
+      <a href="#" class="nav-toggle fl-rigth">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav class="nav">
+        <p class="text-right">
+          <span class="nav-close">
+            <i class="fas fa-times"></i></span>
+        </p>
+        <ul>
+          <li class="curt"><img src="images/icons/purple-heart.svg" alt="Coração"><a href="#">Meus lugares</a></li>
+          <li><button type="button" onclick="logout()" class="out">Sair</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="text-content">
+      <h1>Nova Cruz</h1>
+    </div>
+  </header>
+  
+  <section class="search-results">
+      <div class="bt-container">
+        <a href="events.html"><button class='bt' type='submit'><img src="images/events.png"></button></a>
+        <a href="restaurant.html"><button class='bt' type='submit'><img src="images/restaurante.png"></button></a>
+        <a href="temp.html"><button class='bt' type='submit'><img src="images/clim.png"></button></a>
+      </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/menu-responsivo.js"></script>
+  </body>
+</html>

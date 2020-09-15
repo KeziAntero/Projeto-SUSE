@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUSE | Cadastro</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/register.css">
+ 
+  
+</head>
+<body id="page-register">
+  <div id="container">
+    <header class="page-header">
+      <div class="top-bar-container">
+        <a href="search-results.html">
+          <img src="images/icons/back.svg" alt="Voltar">
+        </a>
+        <img src="images/logo.png" alt="SUSE">
+      </div>
+      <div class="header-content">
+        <strong>Cadastre seu restaurante</strong>
+        <p>O primeiro passo, é preencher esse formulário</p>
+      </div>
+    </header>
+    <main>
+      <form action="" id="create-class">
+        <fieldset>
+          <legend>Dados do restaurante</legend>
+          
+          <div class="input-block">
+            <label for="name">Nome do restaurante</label>
+            <input name="name" id="name" required>
+          </div>
+
+          <div class="input-block">
+            <label for="event">Adicionar logo do restaurante</label>
+              <input type="file" class="form-control-file" id="imagens">
+          </div>
+          <div class="input-block">
+            <label for="pratos">Carregar imagens dos pratos<small>(somente três imagens)</small></label>
+            <input type="file" class="form-control-file" id="imagens">
+        </div>
+          <!--<div class="input-block">
+            <label for="avatar">Link do banner <small>(comece com https://</small></label>
+            <input name="avatar" id="avatar" type="url" required>
+          </div>-->
+          
+          <div class="input-block">
+            <label for="adress">Endereço</label>
+            <input type="text" name="adress" required>
+          </div>
+          <div class="input-block">
+            <label for="adress">Nº</label>
+            <input type="number" name="adress" required>
+          </div>
+          <div class="input-block">
+            <label for="adress">Bairro</label>
+            <input type="text" name="adress" required>
+          </div>
+          <div class="input-block">
+            <label for="whatsapp">Telefone <small>(somente números)</small></label>
+            <input name="whatsapp" id="whatsapp" type="number" required>
+          </div>
+          
+          <div class="locality">
+          <div class="select-block">
+                <label for="state">Estado</label>
+                <select name="uf" required>
+                    <option value="">Selecione o Estado</option>
+                </select>
+                    <input type="hidden" name="state">
+          </div>
+          <div class="select-block">
+                <label for="city">Cidade</label>
+                    <select name="city" disabled required>
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+          </div>
+        </div>
+         
+          <div class="select-block">
+            <label for="weekday">Especialidade</label>
+            <select name="weekday[]" required>
+              <option value="">Pizza</option>
+              <option value="0">Comida Chinesa</option>
+             </select>
+          </div>
+         
+            <div class="field-delivery">
+                <label for="Entrega">Possue serviço de entrega?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                  <label class="form-check-label" for="inlineRadio1">Sim</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                <label class="form-check-label" for="inlineRadio2">Não</label>
+            </div>
+            </div>
+        </fieldset>
+      
+        <fieldset id="schedule-items">
+          <legend>Horário de funcionamento</legend>
+          <div class="schedule-item">
+            
+            <div class="input-block">
+              <label for="time_from">Das</label>
+              <input type="time" name="time_from[]" required>
+            </div>
+            <div class="input-block">
+              <label for="time_to">Até</label>
+              <input type="time" name="time_to[]" required>
+            </div>
+          </div>
+         
+        </fieldset>
+        <fieldset>
+          <legend>Sobre o Proprietário</legend>
+          <div class="input-block">
+            <label for="name">Nome</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="input-block">
+            <label for="whatsapp">WhatsApp dos <small>(somente números)</small></label>
+            <input name="whatsapp" id="whatsapp" type="number" required>
+          </div>
+        </fieldset>
+        
+      </form>
+      <footer>
+        <p>
+          <img src="images/icons/warning.svg" alt="Aviso importante">
+          Importante! <br> Preencha todos os dados
+        </p>
+        <button type="submit" form="create-class">Salvar cadastro</button>
+      </footer>
+    </main>
+  </div>
+  <script src="js/estado-municipio.js"></script>
+</body>
+</html>

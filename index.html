@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>SUSE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body>
+
+	<header class="header">
+    <div class="content">
+      <div class="logo fl-left">
+        <a href="#">
+          <img src="images/logo.png" alt="logo"/>
+        </a>
+      </div>
+      <a href="#" class="nav-toggle fl-rigth">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav class="nav">
+        <p class="text-right">
+          <span class="nav-close">
+            <i class="fas fa-times"></i></span>
+        </p>
+        <ul>
+          <li class="curt"><img src="images/icons/purple-heart.svg" alt="Coração"><a href="#">Meus lugares</a></li>
+          <li><button type="button" onclick="logout()" class="out">Sair</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="search-box">
+      <header>
+        <h1>Para onde vamos?</h1>
+        <p>Viva novas experiências!</p>
+       </header>
+      <form class="form-search" method="post" action="">
+        <input type="search" name="busca" id="busca" action="#" autocomplete="on" placeholder="Cidade..." />
+        <button><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+
+  </section>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/menu-responsivo.js"></script>
+ 
+ 
+  </body>
+</html>
